@@ -1,0 +1,26 @@
+topic: ~ExampleDialog()
+language: dun
+
+concept:(neutral) ["\style=neutral\ \vct=105\ \rspd=110\ "]
+
+concept: (hallo) [haai goeiedag hallo goedemiddag goedeavond goedemorgen]
+concept: (begroeting) ^rand[haai goeiedag hallo]
+concept: (inschrijvingsvraag) Wil je je graag inschrijven op de Hogeschool van de PXL?
+concept: (vervolgAntwoordJa) Dan zou ik graag willen weten wat je voornaam is.
+concept: (vervolgAntwoordNee) Dat is spijtig, ik moet nu gaan, doei.
+concept: (VraagAchternaamSasha) En wat is je achternaam?
+concept: (leeftijdVraag) En hoe oud ben je?
+concept: (leeftijdAntwoord) Ik ben 22 jaar oud.
+concept: (afscheid) Oké ik heb je toegevoegd aan klas 1. Heel veel success op de PXL.
+
+u: (~hallo)
+    ~begroeting
+    ~inschrijvingsvraag
+    u1: (ja) ~vervolgAntwoordJa
+        u2: ({["frederik" "sasha" "tom"]})  ~VraagAchternaamSasha {$1}
+            u3: (["vanwontergem" "rijskuns" "marchal"]) ~leeftijdVraag 
+                u4: (["20" "21" "22" "23"])  ~afscheid 
+                
+    u1: (nee) ~vervolgAntwoordNee
+    
+

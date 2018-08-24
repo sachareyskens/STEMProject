@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package uuid="projectzora-07bd99">
+ <names>
+  <name lang="en_US">ProjectZora</name>
+ </names>
+ <descriptionLanguages>
+  <language>nl_NL</language>
+  <language>ar_SA</language>
+  <language>cs_CZ</language>
+  <language>da_DK</language>
+  <language>de_DE</language>
+  <language>el_GR</language>
+  <language>en_US</language>
+  <language>es_ES</language>
+  <language>fi_FI</language>
+  <language>fr_FR</language>
+  <language>it_IT</language>
+  <language>ja_JP</language>
+  <language>ko_KR</language>
+  <language>nn_NO</language>
+  <language>pl_PL</language>
+  <language>pt_BR</language>
+  <language>pt_PT</language>
+  <language>ru_RU</language>
+  <language>sv_SE</language>
+  <language>tr_TR</language>
+  <language>zh_CN</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path="behavior_1">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <dialogContent typeVersion="1.0" topicName="ExampleDialog">
+   <topic path="behavior_1/ExampleDialog/ExampleDialog_dun.top" language="nl_NL"/>
+  </dialogContent>
+ </contents>
+</package>
